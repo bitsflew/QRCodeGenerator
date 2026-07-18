@@ -46,7 +46,17 @@
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Hoog (30%)"
+            "value" : "Zeer hoog (30%)"
+          }
+        }
+      }
+    },
+    "https://example.com" : {
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "https://voorbeeld.nl"
           }
         }
       }
@@ -96,7 +106,7 @@
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Kwartiel (25%)"
+            "value" : "Hoog (25%)"
           }
         }
       }
@@ -107,16 +117,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "URL"
-          }
-        }
-      }
-    },
-    "https://example.com" : {
-      "localizations" : {
-        "nl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "https://voorbeeld.nl"
           }
         }
       }
