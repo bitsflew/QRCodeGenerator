@@ -1,0 +1,126 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "Copy QR Code" : {
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kopieer QR-code"
+          }
+        }
+      }
+    },
+    "Create QR Code" : {
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Maak QR-code"
+          }
+        }
+      }
+    },
+    "Enter a valid http or https URL." : {
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Voer een geldige http- of https-URL in."
+          }
+        }
+      }
+    },
+    "Error Correction" : {
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Foutcorrectie"
+          }
+        }
+      }
+    },
+    "High (30%)" : {
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hoog (30%)"
+          }
+        }
+      }
+    },
+    "Low (7%)" : {
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Laag (7%)"
+          }
+        }
+      }
+    },
+    "Medium (15%)" : {
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gemiddeld (15%)"
+          }
+        }
+      }
+    },
+    "QR code copied." : {
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "QR-code gekopieerd."
+          }
+        }
+      }
+    },
+    "QR code for %@" : {
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "QR-code voor %@"
+          }
+        }
+      }
+    },
+    "Quartile (25%)" : {
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kwartiel (25%)"
+          }
+        }
+      }
+    },
+    "URL" : {
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "URL"
+          }
+        }
+      }
+    },
+    "https://example.com" : {
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "https://voorbeeld.nl"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}
