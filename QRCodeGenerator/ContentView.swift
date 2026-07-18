@@ -59,14 +59,12 @@ struct ContentView: View {
             }
             .pickerStyle(.menu)
             .onChange(of: correctionLevel) { _, _ in
-                qrCodeImage = nil
-                didCopyQRCode = false
+                regenerateQRCode()
             }
 
             HStack {
                 Button("Create QR Code") {
-                    qrCodeImage = makeQRCode(from: trimmedURLText)
-                    didCopyQRCode = false
+                    regenerateQRCode()
                 }
                 .disabled(!isValidURL)
 
@@ -92,6 +90,17 @@ struct ContentView: View {
             }
         }
         .padding()
+    }
+
+    private func regenerateQRCode() {
+        didCopyQRCode = false
+
+        guard isValidURL else {
+            qrCodeImage = nil
+            return
+        }
+
+        qrCodeImage = makeQRCode(from: trimmedURLText)
     }
 
     private func makeQRCode(from text: String) -> NSImage? {
