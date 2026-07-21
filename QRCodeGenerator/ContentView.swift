@@ -53,7 +53,7 @@ struct ContentView: View {
             }
 
             Picker("Error Correction", selection: $correctionLevel) {
-                ForEach(QRCodeCorrectionLevel.allCases) { level in
+                ForEach(QRCodeCorrectionLevel.allCases, id: \.self) { level in
                     Text(level.title).tag(level)
                 }
             }
@@ -153,15 +153,11 @@ struct ContentView: View {
     }
 }
 
-private enum QRCodeCorrectionLevel: String, CaseIterable, Identifiable {
+private enum QRCodeCorrectionLevel: String, CaseIterable {
     case low = "L"
     case medium = "M"
     case quartile = "Q"
     case high = "H"
-
-    var id: String {
-        rawValue
-    }
 
     var title: LocalizedStringKey {
         switch self {
