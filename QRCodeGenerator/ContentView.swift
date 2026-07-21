@@ -68,9 +68,20 @@ struct ContentView: View {
                 }
                 .disabled(!isValidURL)
 
-                Button("Copy QR Code") {
+                Button {
                     copyQRCode()
+                } label: {
+                    Image(systemName: "doc.on.doc")
                 }
+                .accessibilityLabel("Copy QR Code")
+                .disabled(qrCodeImage == nil)
+
+                Button {
+                    shareQRCode()
+                } label: {
+                    Image(systemName: "square.and.arrow.up")
+                }
+                .accessibilityLabel("Share QR Code")
                 .disabled(qrCodeImage == nil)
             }
 
@@ -129,6 +140,16 @@ struct ContentView: View {
         pasteboard.clearContents()
         pasteboard.writeObjects([qrCodeImage])
         didCopyQRCode = true
+    }
+
+    private func shareQRCode() {
+        guard let qrCodeImage,
+              let contentView = NSApplication.shared.keyWindow?.contentView ?? NSApplication.shared.windows.first?.contentView else {
+            return
+        }
+
+        let picker = NSSharingServicePicker(items: [qrCodeImage])
+        picker.show(relativeTo: contentView.bounds, of: contentView, preferredEdge: .minY)
     }
 }
 

@@ -111,6 +111,16 @@
         }
       }
     },
+    "Share QR Code" : {
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deel QR-code"
+          }
+        }
+      }
+    },
     "URL" : {
       "localizations" : {
         "nl" : {
